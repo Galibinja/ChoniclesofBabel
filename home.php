@@ -18,9 +18,10 @@
 						<h1><a href="home.html">The Chronicles of Babel</a></h1>
 						<?php
 							include 'navbar.php'
+                           
 						?>
 					</header>
-
+ 
 
 					<section id="banner">
 						<div class="inner">
@@ -29,7 +30,7 @@
 							queiram adiquirir um interesse pelo inglês de uma forma simples e divertida<br />
 							criado por  <a href="https://www.instagram.com/gabrel_mls/">Gabriel Madeira</a>.</p>
 							<ul class="actions special">
-								<li><a href="game.html" class="button primary">Jogar</a></li>
+								<li><a href="Game/index.html" class="button primary">Jogar</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Saiba Mais</a>

@@ -32,7 +32,9 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/rpgmv3.png');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form method="post" action="dadoscadastro.php">
 				<form class="login100-form validate-form">
+
 					<span class="login100-form-title p-b-49">
 						Cadastro
 					</span>
@@ -41,19 +43,19 @@
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Usuario:</span>
-						<input class="input100" type="password" name="pass" placeholder="Digite sua senha">
+						<input class="input100" type="text" name="usuario" placeholder="Digite sua senha">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Email:</span>
-						<input class="input100" type="password" name="pass" placeholder="Digite sua senha">
+						<input class="input100" type="Email" name="email" placeholder="Digite sua senha">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Senha:</span>
-						<input class="input100" type="password" name="pass" placeholder="Digite sua senha">
+						<input class="input100" type="password" name="senha" placeholder="Digite sua senha">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
@@ -69,7 +71,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" >
+							<button type="submit" class="login100-form-btn" >
 								Cadastrar
 							</button>
 						</div>
