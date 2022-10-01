@@ -3,8 +3,8 @@
 #VERIFICAÇÃO DE LOGIN USANDO TABELA usuarios e banco de dados
 require("Conexão.php");
 $sql = "SELECT *,count(*) as total FROM user WHERE (usuario = '".$_POST['usuario']."' AND senha = '".$_POST['senha']."')";
-$res = mysqli_query($con, $sql);
-$dados = mysqli_fetch_assoc($res);
+$res = pg_query($con, $sql);
+$dados = pg_fetch_assoc($res);
 
 if($dados['total'] > 0){    
     $_SESSION['usuario'] = $dados['user'];
