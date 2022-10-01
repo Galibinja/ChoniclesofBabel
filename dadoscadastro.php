@@ -6,9 +6,9 @@ require('Conexão.php');
 $usuario= (isset($_POST['usuario'])) ? $_POST['usuario'] : "";
 $email= (isset($_POST['email'])) ? $_POST['email'] : "";
 $senha= (isset($_POST['senha'])) ? $_POST['senha'] : "";
-$feedback= (isset($_POST['feedback'])) ? $_POST['feedback'] : "";
 
-$sql_insert = "INSERT INTO user (usuario,email,senha,feedback) VALUES ('$usuario','$email','$senha','$feedback')"; 
+
+$sql_insert = "INSERT INTO user (usuario,email,senha) VALUES ('$usuario','$email','$senha')"; 
 
 print_r($sql_insert);
 
