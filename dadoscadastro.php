@@ -8,11 +8,11 @@ $email= (isset($_POST['email'])) ? $_POST['email'] : "";
 $senha= (isset($_POST['senha'])) ? $_POST['senha'] : "";
 
 
-$sql_insert = "INSERT INTO user (usuario,email,senha) VALUES ('$usuario','$email','$senha')"; 
+$pg_insert = "INSERT INTO user (usuario,email,senha) VALUES ('$usuario','$email','$senha')"; 
 
-print_r($sql_insert);
+print_r($pg_insert);
 
-if(mysqli_query($con,$sql_insert)){
+if(mysqli_query($con,$pg_insert)){
     echo "<script>alert('Cadastrado com sucesso!');window.location='index.php'</script>";
     
 }
