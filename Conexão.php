@@ -1,5 +1,5 @@
 <?php
-     $servidor = "localhost";
+     $servidor = "ec2-3-93-206-109.compute-1.amazonaws.com";
      $porta = 5432;
      $bancoDeDados = "d3doj7sr60nnpd";
      $usuario = "boupatzxmzekmi";
