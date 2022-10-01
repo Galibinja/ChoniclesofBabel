@@ -1,7 +1,0 @@
-[
-null,
-{"id":1,"battlerName":"Start","characterIndex":0,"characterName":"Start","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"Start","traits":[],"initialLevel":1,"maxLevel":99,"name":"Start","nickname":"Start","note":"","profile":""},
-{"id":2,"battlerName":"Karin","characterIndex":0,"characterName":"Karin","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Karin","traits":[],"initialLevel":1,"maxLevel":99,"name":"Karin","nickname":"","note":"","profile":""},
-{"id":3,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":4,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
-]
