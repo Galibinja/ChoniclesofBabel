@@ -12,7 +12,7 @@ $pg_insert = "INSERT INTO user (usuario,email,senha) VALUES ('$usuario','$email'
 
 print_r($pg_insert);
 
-if(pg_query($con,$pg_insert){
+if(pg_query_params ($con,$pg_insert){
     echo "<script>alert('Cadastrado com sucesso!');window.location='index.php'</script>";
     
 }
