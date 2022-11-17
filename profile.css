@@ -1,0 +1,12 @@
+body{
+background-image: url("images/torre.jpg");
+max-width:100%;
+height:auto;
+}
+.btn {
+    display: flex;
+    align-self: center;
+}
+.card{
+    background-color: black;
+}

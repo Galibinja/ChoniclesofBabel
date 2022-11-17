@@ -1,3 +1,8 @@
+<?php session_start();
+if(!$_SESSION['logado']){
+    echo "<script>alert('Ambiente restrito. Favor fazer login para acessar.');window.location='index.php'</script>";
+}
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -17,7 +22,7 @@
 					<header id="header" class="alt">
 						<h1><a href="home.html">The Chronicles of Babel</a></h1>
 						<?php
-							include 'navbar.php'
+							include("navbar.php")
                            
 						?>
 					</header>
@@ -74,13 +79,6 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
 						<ul class="copyright">
 							<li>&copy; The Chronicles of Babel</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>

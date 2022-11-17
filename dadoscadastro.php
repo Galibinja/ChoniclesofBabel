@@ -3,21 +3,21 @@
 
 require('Conexão.php');
 
-$usuario= (isset($_POST['usuario'])) ? $_POST['usuario'] : "";
-$email= (isset($_POST['email'])) ? $_POST['email'] : "";
-$senha= (isset($_POST['senha'])) ? $_POST['senha'] : "";
+$username= (isset($_POST['username'])) ? $_POST['username'] : "";
+$password= (isset($_POST['password'])) ? $_POST['password'] : "";
+$email= $_POST["email"];
+$role_id= "1";
 
 
-$pg_insert = "INSERT INTO user (usuario,email,senha) VALUES ('$usuario','$email','$senha')"; 
+$sql_insert = "INSERT INTO accounts (username,password,email,role_id) VALUES ('$username','$password','$email',$role_id) "; 
+print_r($sql_insert);
 
-print_r($pg_insert);
-
-if(pg_query_params ($con,$pg_insert){
-    echo "<script>alert('Cadastrado com sucesso!');window.location='index.php'</script>";
+if(mysqli_query($con,$sql_insert)){
+    echo "<script>window.location='index.php'</script>";
     
 }
 else{
-    echo "<script>alert('Erro ao cadastrar, preencha novamente por favor!');window.location='Cadastro.php'</script>";
+
 }
- pg_close($con);
+ mysqli_close($con);
 ?>

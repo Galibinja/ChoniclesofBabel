@@ -40,13 +40,13 @@
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Usuario:</span>
-						<input class="input100" type="text" name="usuario" placeholder="Digite seu nome de usuario">
+						<input class="input100" type="text" name="username" placeholder="Digite seu nome de usuario">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<span class="label-input100">Senha:</span>
-						<input class="input100" type="password" name="senha" placeholder="Digite sua Senha:">
+						<input class="input100" type="password" name="password" placeholder="Digite sua Senha:">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 					
