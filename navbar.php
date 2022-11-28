@@ -10,12 +10,17 @@
 											<li><a href="home.php">Inicio</a></li>
 											<li><a href="profile.php">Seu Perfil</a></li>
 											<li><a href="rpgmaker.php">O RPG Maker</a></li>
-											<li><a href="plugin.php">Os Plug-ins Usados</a></li>
+										
 											<?php 
+
+
+
+
+
 											if(isset($_SESSION['role_id'])){
  									require('Conexão.php');
 									if($_SESSION['role_id'] == 2){
-									echo'<li><a href="ADM.php">ADM</a></li>';
+									echo'<li><a href="veruser.php">ADM</a></li>';
 										}
 										else{
 

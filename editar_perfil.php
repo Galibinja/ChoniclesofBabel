@@ -6,19 +6,22 @@ session_start();
            $errors[] = "password esta vacío";
         } else if (empty($_POST['email'])) {
            $errors[] = "email esta vacío";
-        }    else if (
+        }  else if (empty($_POST['feedback'])) {
+			$errors[] = "feedback esta vacío";
+		 }  else if (
 			!empty($_POST['username']) &&
 			!empty($_POST['password']) &&
-			!empty($_POST['email']) 
+			!empty($_POST['email']) &&
+			!empty($_POST['feedback'])
 			
 		){
 			require("Conexão.php");
 		$username=mysqli_real_escape_string($con,(strip_tags($_POST["username"],ENT_QUOTES)));
 		$password=mysqli_real_escape_string($con,(strip_tags($_POST["password"],ENT_QUOTES)));
 		$email=mysqli_real_escape_string($con,(strip_tags($_POST["email"],ENT_QUOTES)));
+		$feedback=mysqli_real_escape_string($con,(strip_tags($_POST["feedback"],ENT_QUOTES)));
 		
-		
-		$sql="UPDATE accounts SET username='".$username."', password='".$password."', email='".$email."' WHERE user_id=".$_SESSION["id"];
+		$sql="UPDATE accounts SET username='".$username."', password='".$password."', email='".$email."', feedback='".$feedback."' WHERE user_id=".$_SESSION["id"];
 		$query_update = mysqli_query($con,$sql);
 			if ($query_update){
 				$messages[] = "Datos han sido actualizados satisfactoriamente.";
@@ -39,7 +42,7 @@ echo "<script>alert('Erro');window.location='profile.php'</script>";
 			<?php
 			}
 			if (isset($messages)){
-
+				echo "<script>window.location='profile.php'</script>";
 				?>
 
 						

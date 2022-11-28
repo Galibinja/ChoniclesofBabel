@@ -8,8 +8,9 @@ $row=mysqli_fetch_array($query_accounts);
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<title>Perfil de <?php echo $row['username']?></title>
 
-		
+		<link rel="icon" type="image/png" href="images/icons/trofeu.png"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -27,12 +28,7 @@ $row=mysqli_fetch_array($query_accounts);
 					</header>
 
 	
-	<section class="userimg">
-	<div id="load_img">
-					<img class="img-responsive" src="<?php echo $row['logo_url'];?>" alt="Logo">
-					
-				</div>
-	</section>
+
 
 	<section class="login">
 	<div class="container align-left">
@@ -54,11 +50,11 @@ $row=mysqli_fetch_array($query_accounts);
     <input type="text" class="form-control" id="exampleFormControlInput1" name="password" value="<?php echo $row['password']?>" placeholder="">
   </div>
   <div class="form-group">
-
-    <input class='filestyle' data-buttonText="Logo" type="file" name="imagefile" id="imagefile" onchange="upload_image();">
+    <label for="exampleFormControlTextarea1">Deixe seu Feedback:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="feedback" ><?php echo $row['feedback']?></textarea>
   </div>
   </form>
-  <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-refresh"></i> Actualizar hoja de vida</button>
+  <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-refresh"></i> Atualizar dados</button>
   </div>
   </div>
 </div>
@@ -90,34 +86,3 @@ $( "#perfil" ).submit(function( event ) {
 	});
   event.preventDefault();
 })
-</script>
-<script>
-		function upload_image(){
-				
-				var inputFileImage = document.getElementById("imagefile");
-				var file = inputFileImage.files[0];
-				if( (typeof file === "object") && (file !== null) )
-				{
-					$("#load_img").text('Cargando...');	
-					var data = new FormData();
-					data.append('imagefile',file);
-					
-					
-					$.ajax({
-						url: "imagen_ajax.php",        // Url to which the request is send
-						type: "POST",             // Type of request to be send, called as method
-						data: data, 			  // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-						contentType: false,       // The content type used when sending data to the server.
-						cache: false,             // To unable request pages to be cached
-						processData:false,        // To send DOMDocument or non processed data file it is set to false
-						success: function(data)   // A function to be called if request succeeds
-						{
-							$("#load_img").html(data);
-							
-						}
-					});	
-				}
-				
-				
-			}
-    </script>

@@ -16,6 +16,7 @@ if(!$_SESSION['logado']){
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/rpgm.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +25,7 @@ if(!$_SESSION['logado']){
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">The Chronicles of Babel</a></h1>
+						<h1><a href="home.php">The Chronicles of Babel</a></h1>
 						<?php
 							include 'navbar.php'
                            
@@ -34,37 +35,81 @@ if(!$_SESSION['logado']){
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>RPGMaker</h2>
+							<h2>O RPGMaker</h2>
 
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+								<h3>O que é?</h3>
+								<p>RPG Maker é um programa que permite aos usuários criar seus próprios jogos de RPG . A maioria das versões inclui um editor de mapa baseado em conjunto de blocos (conjuntos de blocos são chamados de chipsets em versões pré-XP), uma linguagem de script simples para eventos de script e um editor de batalha. <br>
+								<br>Todas as versões incluem tilesets iniciais pré-fabricados, personagens e eventos que podem ser usados ​​na criação de novos jogos. Uma característica das versões para PC dos programas RPG Maker é que um usuário pode criar novos tilesets e personagens e adicionar qualquer novo gráfico que o usuário desejar.<br>
 
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+								<br>Apesar de ser voltado para a criação de videogames de RPG , o mecanismo também tem a capacidade de criar jogos de outros gêneros, como jogos de aventura, jogos baseados em histórias ou romances visuais com ajustes mínimos. </p>
+								<div class="img">
+<section class="d-flex justify-content-center">
+<img class="d-flex justify-content-center" src="images/RPGimg.jpg" >
+</section>
+</div>
+<hr />
+<h3>Recursos do RPG Maker:</h3>
+								<p>A RPG Maker MV utiliza Javascript para seus plugins – uma novidade que agradou bastante os desenvolvedores dessa plataforma, já que as versões anteriores rodavam com a linguagem Ruby.<br>
 
-								<hr />
+								<br>O desenvolvedor pode criar as funções desejadas na linguagem em um editor de sua preferência e depois enviá-los para a pasta de plugins. Ele também pode ativar ou desativar esses add-ons facilmente pelo Plugin Manager.<br>
 
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
+								<br>Outro recurso da engine são os diversos modelos de exemplos para o usuário adaptar. Existem mais de 100 mapas, modelos para construir personagens e peças prontas para quem deseja começar a criar um jogo sem ter muito trabalho.<br>
 
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
+								<br>A engine é capaz de exportar jogos com resolução de 816×624 pixels e o desenvolvedor pode optar, com um simples clique, entre os modos de visualização de batalha lateral (Side View) e frontal (Front View).</p>
 
+								
+								<div class="img">	
+<section class="d-flex justify-content-center">
+<img class="d-flex justify-content-center" src="images/interfacerpg.jpg" >
+</section>
+</div>
+<hr />
+<section class="ttvant">
+								
+								
+</section>
+								<section class="vantagens">
+								<ul>
+								<h4>Vantagens</h4>
+							<li>Modelos pré-configurados de mapas, personagens e itens de cenário</li>
+							<li>Gerenciador de plugins</li>
+							<li>Facilidade e rapidez na criação de protótipos em comparação com outras engines</li>
+							<li>Scripts em Javascript (para a versão RPG Maker MV)</li>
+							</ul>
+							
+							<div class="img">
+							<section class="d-flex justify-content-center">
+<img class="d-flex justify-content-center" src="images/geradorrpg.jpg" >
+</section>
+</div>
+							<hr />
+							
+								<ul>
+								<h4>Desvantagens</h4>
+							<li>Limitada a um só estilo de jogo</li>
+							<li>Qualidade baixa dos gráficos</li>
+							<li>Com exceção da versão MV, a RPG Maker produz jogos apenas para Windows</li>
+							<li>Limitações na parte de física e no sistema de mensagens</li>
+							<li>Gameplay e interface de usuário são limitadas: não há muitas opções para personalização</li>
+							</ul>
+							<div class="img">
+							<section class="d-flex justify-content-center">
+<img class="d-flex justify-content-center" src="images/graficosrpg.jpg" >
+</section>
+</div>
+							<hr />
 							</div>
+							</section>
 						</section>
 					</article>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+				
 						<ul class="copyright">
 							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
@@ -80,6 +125,9 @@ if(!$_SESSION['logado']){
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	</body>
 </html>
